@@ -47,5 +47,6 @@ while game_is_on:
         if snake.head.distance(segment) < 1:
             game_is_on = False
             scoreboard.game_over()
+            # using slice to find end of tail
 
 screen.exitonclick()
